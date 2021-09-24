@@ -1,0 +1,119 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background: #F2E7DD;
+}
+.gameBoard{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(3, 1fr);
+}
+
+section{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 20px;
+     margin: 2px;
+     width: 8em;
+     height: 7em;
+     background: #A67758;
+     border-radius: 4%;
+     border-style: none;
+     cursor: pointer;
+}
+
+.box:hover{
+     background: #F9F5F2;
+}
+
+.unclickable{
+     pointer-events: none;
+}
+
+.winningTiles{
+     background: white;
+     font-weight: bold;
+     color: #A67758;
+}
+h1{
+     text-align: center;
+     color: #A67758;
+     font-size: 3em;
+     font-family: 'Noto Serif', serif;
+}
+button{
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+     font-family: 'Noto Serif', serif;
+     background-color: #A67758;
+     border-radius: 9px;
+     height: 3em;
+     width: 16em;
+}
+
+#message{ /*https://jsfiddle.net/hajtwbot*/
+     font-weight: bold;
+     font-size: 60px;
+     animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #A67758;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #A67758;	}
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
