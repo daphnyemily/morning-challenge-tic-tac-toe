@@ -6,7 +6,7 @@ I completed the challenge: 4
 
 I feel good about my code: 4
 
-Had alot of help from team Gardner. The begining of OOP.
+Had alot of help from team Gardner. The beginning of OOP.
 
 <a href=https://tictactoe-daphnyemily.netlify.app/> LIVE DEMO </a>
 
